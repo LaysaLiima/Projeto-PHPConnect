@@ -2,8 +2,298 @@
 ;
 
 * {
-    margin: 0;
-    padding: 0;  
-    font-family: "Koh Santepheap", serif;  
+  margin: 0;
+  padding: 0;  
+  font-family: "Koh Santepheap", serif; 
+  color: #0D3511;
+  }
+
+   body{
+  background: rgb(97,63,19);
+  background: linear-gradient(137deg, rgba(97,63,19,1) 9%, rgba(237,143,50,1) 100%);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  img{
+    justify-content: start;
+    margin-right: 10px;
+  }
+
+ 
+  /* PÁGICA DE LOGIN */
+  section.signin{
+    background-color: #ffffff;
+    min-width: 450px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 , 0.1);
+    border-radius: 10px;
+  }
+
+  section.signin .form-control{
+    padding: 10px 5px;   
+    height: 56px;
+    display: inline-flex;
+    align-items: baseline;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgb(239, 240, 240, 0.85);
+    border-radius: 4px;
+    padding: 0px 12px;
+    cursor: text;
+    border-color: rgb(84, 87, 89) 0px 0px 0px 1px inset;
+  }
+
+  section.signin .form-control:focus {
+    outline: none;
+    border-color: #FFB266; 
+    box-shadow: 0 0 5px rgba(255, 178, 102, 0.5); 
+}
+
+  section.signin .form-control:hover{
+    border-color: #FFB266;
+  }
+
+  section.signin .btn-primary {
+    padding: 0.75rem;
+    background-color: #FFB266;
+    border: none;
+    font-size: 20px;
+  }
+  
+  section.signin .btn-primary:hover {
+    background-color: #ec8f32;
+  }
+
+  
+  section.signin .form-group{
+    padding: 0.75rem;
+    background-color: #333;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.signin p.paragrafo{
+    line-height: 30px;
+  }
+
+  section.signin a {
+    color:#dbae3c;
+    font-size: 15px;
+  }
+
+  section.signin a:hover {
+    text-decoration: inherit; 
+    background-color: transparent;
+    color: #ffffff;
+    background: #FFB266;
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
+    border-radius: 2px;
+  }
+
+    
+    /* PÁGICA DE CADASTRO */
+  section.signup{
+    background-color: #ffffff;
+    min-width: 450px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 , 0.1 );
+    border-radius: 10px;
+  } 
+
+  section.signup .form-control{
+    padding: 10px 5px;   
+    height: 56px;
+    display: inline-flex;
+    align-items: baseline;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgb(239, 240, 240, 0.85);
+    border-radius: 4px;
+    padding: 0px 12px;
+    cursor: text;
+  }
+
+  section.signup .form-control:focus {
+    outline: none;
+    border-color: #FFB266; 
+    box-shadow: 0 0 5px rgba(255, 178, 102, 0.5); 
+  }
+
+  section.signup .form-control:hover{
+    border-color: #FFB266;
+  }
+
+  section.signup .btn-primary {
+    padding: 0.75rem;
+    background-color: #FFB266;
+    border: none;
+    font-size: 20px;
+  }
+
+  section.signup .btn-primary:hover {
+    background-color: #ec8f32;
+  }
+
+  section.signup .form-group{
+    padding: 0.75rem;
+    background-color: #333;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.signup p.paragrafo{
+    line-height: 30px;
+  }
+
+  section.signup a {
+    color:#dbae3c;
+    font-size: 15px;
+  }
+
+  section.signup a:hover {
+    text-decoration: inherit; 
+    background-color: transparent;
+    color: #ffffff;
+    background: #FFB266;
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  /* PÁGINA DE TABELA */
+
+  section.system{
+    background-color: #ffffff;
+    min-width: 450px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 , 0.1);
+    border-radius: 10px;
+  }
+
+  .system h1 {
     color: #0D3511;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  table th {
+    background-color: #FFB266;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFB266;
+  }
+
+  table tbody tr:hover {
+    background-color: #FFB266;
+    color: #ffffff;
+  }
+
+  table .btn {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  table .btn-primary {
+    background-color: #FFB266;
+    color: #0D3511;
+  }
+
+  table .btn-primary:hover {
+    background-color: #ec8f32;
+    color: #ffffff;
+  }
+
+  table .btn-danger {
+    background-color: #d9534f;
+    color: #ffffff;
+  }
+
+  table .btn-danger:hover {
+    background-color: #c9302c;
+  }
+
+  .pagination .active a.page-link {
+    background-color: #FFB266;
+    color: white; 
+    border-color: #FFB266;
+  } 
+
+  .pagination .active a.page-link:hover {
+    background-color: #ec8f32;
+  } 
+
+
+  .pagination .active a.page-link:focus {
+    outline: none;
+    border-color: #FFB266; 
+    box-shadow: 0 0 5px rgba(255, 178, 102, 0.5); 
+  }
+
+  input[type="search"]:focus {
+    outline: none;
+    border-color: #FFB266; 
+    box-shadow: 0 0 5px rgba(255, 178, 102, 0.5); 
+  }
+
+  select:focus {
+    outline: none !important;
+    border:#FFB266!important;
+    box-shadow: 0 0 5px rgba(255, 178, 102, 0.5)!important; 
+  }
+  select option:checked {
+    outline: none !important;
+    background-color: #FFB266;
+    color: white; 
+    border-color: #FFB266;
   }
