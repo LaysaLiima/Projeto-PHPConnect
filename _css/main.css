@@ -104,6 +104,16 @@
     border-radius: 2px;
   }
 
+  @media (max-width: 768px) {
+    section.signin {
+     min-width: 100%;
+    }
+  
+    body {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
     
     /* PÁGICA DE CADASTRO */
   section.signup{
@@ -180,6 +190,17 @@
     padding: 3px 0 !important;
     position: relative;
     border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    section.signup {
+     min-width: 100%;
+    }
+  
+    body {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 
   /* PÁGINA DE TABELA */
