@@ -1,6 +1,15 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+    echo "<script>window.location.href = 'login.html';</script>";
+    exit();
+}
+
+include_once('conexao.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +49,6 @@
         </thead>
         <tbody>
           <?php
-          include_once ('conexao.php');
-          
           $listagem = $conexao->query("SELECT * FROM usuarios ORDER BY id_usuario DESC");
           
           while ($user = $listagem->fetch_assoc()) {
@@ -68,6 +75,9 @@
           ?>
         </tbody>
       </table>
+      <div class="d-flex justify-content-end mt-3">
+            <a href="logout.php" class="btn btn-danger">Logout</a>
+        </div>
     </div>
 
     <script>
